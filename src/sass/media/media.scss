@@ -1,0 +1,45 @@
+@media (max-width: 1440px) {
+    .header {
+        flex-direction: row-reverse;
+        .btn_login {
+            display: none;
+        }
+    }
+    .main {
+        flex-direction: column;
+        &__left, &__right {
+            width: 100%;
+            padding: 50px;
+        }
+        &__left {
+            position: relative;
+            .main__content {
+                max-width: 60%;
+            }
+        }
+    }
+    .circle_main {
+        left: auto;
+        bottom: auto;
+        top: 278px;
+        right: 67px
+    }
+    .leaf_main {
+        left: auto;
+        top: auto;
+        right: 384px;
+        bottom: 70px;
+    }
+    .leaf-s_main {
+        left: auto;
+        bottom: auto;
+        top: 120px;
+        right: 323px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main__content {
+        max-width: 100%;
+    }
+}

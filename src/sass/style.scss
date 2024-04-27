@@ -1,0 +1,27 @@
+@import 'variables/*.scss';
+@import 'mixins/*.scss';
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-weight: 400;
+}
+
+body {
+    background: $white;
+    position: relative;
+    overflow-x: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+@import 'blocks/*.scss';
+@import 'sections/*.scss';
+@import 'media/media.scss';

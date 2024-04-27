@@ -1,0 +1,62 @@
+.circle {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid $main;
+    border-radius: 100%;
+    z-index: -1;
+    &_main {
+        top: 320px;
+        left: -53px;
+    }
+    &_authorization {
+        height: 200px;
+        width: 200px;
+        left: -113px;
+        top: 179px;
+        border: 1px solid $white;
+        z-index: -1;
+    }
+}
+
+.leaf {
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid $main;
+    border-radius: 50px 0px 50px 0px;
+    z-index: -1;
+    &_main {
+        left: 470px;
+        bottom: 70px;
+    }
+    &_authorization {
+        right: -31px;
+        bottom: -46px;
+        border: 1px solid $white;
+        z-index: 0;
+    }
+    &-s {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid $main;
+        height: 100px;
+        width: 100px;
+        border-radius: 0px 50px 0px 50px;
+        z-index: -1;
+        &_main {
+            top: 120px;
+            left: 370px;
+        }
+        &_authorization {
+            right: 70px;
+            top: -57px;
+            border: 1px solid $white;
+            z-index: 0;
+            height: 80px;
+            width: 80px;
+        }
+    }
+}

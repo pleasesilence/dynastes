@@ -1,0 +1,9 @@
+.title {
+    color: $black;
+    font-size: 86px;
+    font-weight: 700;
+    line-height: 86px;
+    &_wh {
+        color: $white;
+    }
+}

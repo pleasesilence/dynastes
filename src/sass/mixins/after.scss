@@ -1,0 +1,37 @@
+@mixin after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@mixin after_btn {
+    width: 100%;
+    height: 100%;
+    background-color: $main-light;
+    border-radius: 50px;
+    transform: translate(-100%, 0);
+    transition: .2s transform ease-in-out;
+    z-index: -1;
+}
+
+@mixin after_text {
+    overflow: hidden;
+    z-index: 0;
+    &:hover::after {
+        transform: translate(0, 0);
+    }
+    &::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $black;
+        transform: translate(-100%, 0);
+        z-index: -1;
+        transition: .2s transform ease-in-out;
+    }
+}

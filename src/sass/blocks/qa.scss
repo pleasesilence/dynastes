@@ -1,0 +1,55 @@
+.qa {
+    display: none;
+    margin-top: 30px;
+    width: 100%;
+    max-height: 650px;
+    background-color: $white;
+    border-radius: 30px;
+    &__block {
+        padding: 20px 40px;
+        border-bottom: 1px solid $black;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow: hidden;
+        height: 100%;
+    }
+    &__block:last-child {
+        border: none;
+    }
+    &__question {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    &__btn {
+        border: none;
+        background-color: none;
+        font-weight: 700;
+        font-size: 28px;
+        cursor: pointer;
+        user-select: none;
+        transition: all 0.5s ease-in-out;
+    }
+    &_active {
+        display: block;
+    }
+}
+
+.qa__block .text {
+    display: block;
+    height: 100%;
+    max-height: 0px;
+    transition: all 0.7s ease-in-out;
+    overflow: hidden;
+}
+
+.qa__block_active {
+    .text {
+        display: block;
+        max-height: 200px;
+    }
+    .qa__btn {
+        transform: rotate(45deg);
+    }
+}

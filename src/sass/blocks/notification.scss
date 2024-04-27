@@ -1,0 +1,52 @@
+.notification {
+    min-width: 100px;
+    height: 50px;
+    background-color: $white;
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 30px;
+    padding: 10px 15px 10px 45px;
+    border: 2px solid $main;
+    z-index: 3;
+    align-items: center;
+    animation: moveFromLeft 0.5s ease-in-out;
+    animation-direction: normal;
+    picture {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        user-select: none;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    p {
+        text-align: center;
+    }
+    &_active {
+        animation: moveFromRight 1s ease-in-out;
+        translate: 300px;
+    }
+}
+
+@keyframes moveFromLeft {
+    from {
+        translate: 300px;
+    }
+    to {
+        translate: 0px;
+    }
+}
+
+@keyframes moveFromRight {
+    from {
+        translate: 0px;
+    }
+    to {
+        translate: 300px;
+    }
+}

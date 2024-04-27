@@ -1,0 +1,33 @@
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    &_confirm, &_cancel {
+        background: none;
+        font-weight: 400;
+        font-size: 20px;
+        color: $black;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        border-radius: 50px;
+    }
+    &_confirm {
+        font-weight: 700;
+        color: $main;
+        position: relative;
+        &::after {
+            content: '';
+            display: block;
+            width: inherit;
+            height: 1px;
+            background-color: $main;
+            bottom: 0px;
+        }
+    }
+}

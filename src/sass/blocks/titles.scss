@@ -1,0 +1,14 @@
+.titles {
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    transform: translate(-50%);
+    .title, .subtitle {
+        text-align: center;
+
+    }
+    .title {
+        font-size: 64px;
+        line-height: 64px;
+    }
+}
