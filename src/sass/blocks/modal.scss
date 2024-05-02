@@ -1,3 +1,46 @@
 .modal {
-    
+    z-index: 3;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 30px;
+    background-color: $white;
+    width: 100%;
+    max-width: 400px;
+    padding: 50px;
+    min-height: 200px;
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &__wrapper {
+            width: 100%;
+            max-width: 100%;
+            .text {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .subtitle {
+        color: $main;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    &_active {
+        display: flex;
+        animation: modalFromRight .5s ease-in-out;
+    }
+}
+
+@keyframes modalFromRight {
+    from {
+        transform: translate(300%, -50%);
+    }
+    to {
+        transform: translate(50%, -50%);
+    }
 }

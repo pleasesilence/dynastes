@@ -55,7 +55,7 @@
                     <input class="form__input" type="date">
                 </div>
             </form>
-            <button class="window__forgot-password window__forgot-password_active">Забыли пароль?</button>
+            <button class="window__forgot-password window__forgot-password_active" data-modal="forgot-password">Забыли пароль?</button>
             <div class="controls">
                 <a href='javascript:history. back()' class="controls controls_cancel">Отмена</a>
                 <button class="controls controls_confirm">Подтвердить</button>
@@ -64,12 +64,31 @@
             <div class="leaf leaf_authorization"></div>
             <div class="leaf-s leaf-s_authorization"></div>
         </section>
-
     </main>
 
     <footer class="footer">
 
     </footer>
+
+    <div class="overlay"></div>
+
+    <div class="modal" data-modal="forgot-password">
+        <div class="subtitle">Забыли пароль?</div>
+        <form class="form">
+            <div class="form__wrapper">
+                <div class="text">Новый пароль</div>
+                <input class="form__input" type="password">
+            </div>
+            <div class="form__wrapper">
+                <div class="text">Подтвердите пароль</div>
+                <input class="form__input" type="password">
+            </div>
+        </form>
+        <div class="controls">
+            <button class="controls controls_cancel cancel_modal">Отмена</button>
+            <button class="controls controls_confirm confirm_modal">Подтвердить</button>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
