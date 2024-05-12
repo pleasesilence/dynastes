@@ -43,7 +43,9 @@
     "imagemin-pngquant": "^9.0.2",
     "sass": "^1.72.0",
     "webpack": "^5.91.0",
-    "webpack-stream": "^7.0.0"
+    "webpack-stream": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-tinypng-free": "^1.0.13"
   },
   "dependencies": {
     "gulp": "^4.0.2",
