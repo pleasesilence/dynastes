@@ -33,8 +33,6 @@ function modal() {
         console.log(cancel);
 
         showModal();
-    } else {
-        console.log(`modal.js failed`)
     }
 }
 

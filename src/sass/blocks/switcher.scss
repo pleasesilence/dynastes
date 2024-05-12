@@ -1,0 +1,28 @@
+.switcher {
+    width: 410px;
+    min-height: 10px;
+    padding: 10px;
+    background-color: $main;
+    border: none;
+    display: flex;
+    border-radius: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    min-width: 410px;
+}
+
+.switcher__btn {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    height: 100%;
+    width: 100%;
+    color: $white;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 25px;
+    &_active {
+        color: $main;
+        background-color: $white;
+    }
+}

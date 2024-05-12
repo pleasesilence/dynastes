@@ -1,0 +1,11 @@
+.window_registration {
+    max-width: 700px;
+    .form__wrapper {
+        width: 45%;
+    }
+    .window__form {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

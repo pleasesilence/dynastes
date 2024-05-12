@@ -19,8 +19,6 @@ function qa() {
                 showQaBlock(i);
             })
         }
-    } else {
-        console.log(`qa.js failed`)
     }
 };
 
