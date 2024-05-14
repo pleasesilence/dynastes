@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
@@ -46,7 +47,10 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
     "gulp": "^4.0.2",
-    "gulp-tinypng-free": "^1.0.13"
+    "gulp-tinypng-free": "^1.0.13",
+    "mongodb": "^6.6.1"
   }
 }
